@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
     <link rel="stylesheet" href="HawaiianTikki.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!------ <link rel="preconnect" href="https://fonts.gstatic.com">------>
     <script src="https://use.fontawesome.com/8c4d76df4e.js"></script>
 
 
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,
     700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <script src="https://esq-store.s3.amazonaws.com/public/js/embed.js"></script>
 
     <title>Hawaiian Tikki</title>
 </head>
@@ -33,7 +34,7 @@
                 <li><a href="#">Tickets</a></li>
                 <li><a href="#">Busuren</a></li>
                 <li><a href="#">Partners</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </div>
         <div class="content">
@@ -122,6 +123,14 @@
     </div>
 
     <!------"Tickets" sectoin start------>
+<!-- EventSquare Store Embed -->
+    <div id="esq-store"></div>
+    <script>
+    ESQ.embed({
+        link: "https://demo.eventsquare.co/normal/normal-channel",
+        element: "esq-store",
+    });
+    </script>
     <!------"Busuren" sectoin start------>
     <!------"Line-Up" sectoin start------>
     <!------"Partners" sectoin start------>
@@ -129,9 +138,9 @@
     <div id="Contact">
         <section class="contact">
             <div class="content">
-                <h2 class="h2_contact">Contact Us</h2>
+                <h1 class="h2_contact">Contact Us</h1>
                 <p>Heb je een vraag voor ons, of wil je iets anders zeggen. Neem dan gerust contact
-                    met ons op</p>
+                    met ons op.</p>
             </div>
             <div class="container">
                 <div class="contactInfo">
@@ -143,7 +152,7 @@
                         </div>
                     </div>
                     <div class="box">
-                        <div class="icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+                        <div class="icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i></div>
                         <div class="text">
                             <h3 class="h3_contact">E-mailadres</h3>
                             <p>info@hawaiiantikki.be</p>

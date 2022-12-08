@@ -10,6 +10,11 @@
 html{
     scroll-behavior:smooth
 }
+h1{
+    font-weight: 500;
+    font-family: 'martellas_scriptdemo_', Arial, sans-serif;
+    font-size: 80px;
+}
 
 /*Hier begint "Homepage" sectie*/
 
@@ -158,12 +163,12 @@ html{
     justify-content: space-around;
 }
 .about-text h1{
-    font-family: 'martellas_scriptdemo_', Arial, sans-serif;
     text-shadow: 4px 0 0 #000, 0 -4px 0 #000, 0 4px 0 #000, -4px 0 0 #000;
     color: white;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
+    text-decoration: underline #22A895;
 }
 .about-text h2{
     color: white;;
@@ -327,10 +332,10 @@ button:hover{
 #contact .content{
     text-align: center;
 }
-.h2_contact h2{
-    font-size: 50px;
+.h2_contact {
     font-weight: 500;
     color: white;
+    text-decoration: underline #22A895;
 }
 #Contact .container .content p{
     font-weight: 300;
@@ -347,6 +352,7 @@ button:hover{
     width: 40%;
     display: flex;
     flex-direction: column;
+
 }
 .container .contactInfo .box{
     position: relative;
@@ -373,7 +379,7 @@ button:hover{
 }
 .container .contactInfo .box .text h3{
     font-weight: 500;
-    color: #00bcd4;
+    color: rgb(37,170,150);
     font-size: 22px;
 }
 .container .contactInfo .box .text p{
@@ -384,7 +390,6 @@ button:hover{
     padding: 40px;
     background: white;
     margin-top: 75px;
-
 }
 .contactForm h2{
     font-size: 30px;
@@ -427,7 +432,7 @@ button:hover{
 }
 .contactForm .inputbox input[type="submit"]{
     width: 100px;
-    background: #00bcd4;
+    background: rgb(37,170,150);
     color: white;
     border: none;
     cursor: pointer;
@@ -442,7 +447,7 @@ button:hover{
     margin-top: 20px;
     margin-bottom: 20px;
     /* HIER ZET JE DE ONDERSTE TEKST GROTER */
-    font-size: 20px;
+    font-size: 25px;
 }
 
 h2.h2_contact {
