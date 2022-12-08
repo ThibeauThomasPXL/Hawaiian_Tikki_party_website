@@ -487,6 +487,12 @@ h2.h2_contact {
     }
 }
 
+/* TICKET SECTION */
+#Tickets iframe {
+    min-height: 400px;
+    height: auto;
+}
+
 /*Hier begint "Footer" sectie*/
 
 footer{
