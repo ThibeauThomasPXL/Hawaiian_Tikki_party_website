@@ -235,12 +235,10 @@ button:hover{
 }
 #line_up .titelh1{
     color: white;
-    font-size: 60px;
     width: 1130px;
     margin: 0 auto;
     padding-top: 25px;
     text-align: center;
-    font-family: 'martellas_scriptdemo_', Arial, sans-serif;
     text-decoration: underline #22A895;
 }
 #line_up .container .box {
@@ -307,6 +305,24 @@ button:hover{
     #line_up .container .box:hover .imgBox {
         transform: translate(0, -3.5rem);
     }
+}
+/*Hier begint "Tickets" sectie*/
+.Tickets{
+    background: black;
+    width: 100vw;
+    min-width: 100vw;
+}
+.h1_tickets{
+    color: white;
+    width: 1130px;
+    margin: 0 auto;
+    padding-top: 25px;
+    text-align: center;
+    text-decoration: underline #22A895;
+}
+.esq-store{
+    min-width: 1150px;
+    min-height: 1000px;
 }
 
 /*Hier begint "Contact" sectie*/
