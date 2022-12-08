@@ -1,4 +1,5 @@
 /*Thibeau Thomas*/
+
 @font-face{
     font-family: 'martellas_scriptdemo_';
     src: url('Lettertype/Lettertype_script.woff2') format('woff2'),
@@ -9,7 +10,9 @@
 html{
     scroll-behavior:smooth
 }
+
 /*Hier begint "Homepage" sectie*/
+
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +20,7 @@ html{
 
 }
 #home .hero {
-    margin-bottom: 120px;
+    margin-bottom: 145px;
 }
 #home #myVideo {
     width: 100vw;
@@ -76,14 +79,14 @@ html{
 }
 #home .content{
     width: 100%;
-    margin-top: 150px;
+    margin-top: 230px;
     transform: translateY(-50%);
     text-align: center;
     color: white;
 }
 #home .content h1 {
     font-family: 'martellas_scriptdemo_', Arial, sans-serif;
-    font-size: 90px;
+    font-size: 110px;
     font-weight:normal;
     font-style:normal;
     text-shadow: 4px 0 0 #000, 0 -4px 0 #000, 0 4px 0 #000, -4px 0 0 #000;
@@ -94,19 +97,20 @@ html{
     margin: 10px auto;
     font-weight: 100;
     line-height: 25px;
-    font-size: 25px;
+    font-size: 35px;
     font-family: 'martellas_scriptdemo_', Arial, sans-serif;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     position: center;
     text-align: center;
 }
 #home button{
-    width: 150px;
+    width: 180px;
     padding: 10px 0;
     text-align: center;
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
+    font-size: 20px;
     border: 1px solid rgb(37,170,150) ;
     background: transparent;
     color: white;
@@ -130,15 +134,17 @@ html{
 #home button:hover span{
     width: 100%;
 }
+
 /*Hier begint "About-us" sectie*/
+
 .about{
     width: 100%;
-    background-color: black;
+    background-color: #101010;
     padding: 100px 0;
 }
 .about img{
     height: auto;
-    width: 400px;
+    width:400px;
 }
 .about-text{
     width: 550px;
@@ -192,6 +198,7 @@ button:hover{
 
 
 /*Hier begint "Line-Up" sectie*/
+
 *,
 *::after,
 *::before {
@@ -214,7 +221,6 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
-
 .container {
     position: relative;
     display: flex;
@@ -232,23 +238,19 @@ button:hover{
     font-family: 'martellas_scriptdemo_', Arial, sans-serif;
     text-decoration: underline #22A895;
 }
-
 #line_up .container .box {
     position: relative;
     width: 20rem;
     height: 20rem;
-    margin: 4rem;
+    margin:4em;
 
 }
-
 .container .box:hover .imgBox {
     transform: translate(-3.5rem, -3.5rem);
 }
-
 .container .box:hover .content {
     transform: translate(3.5rem, 3.5rem);
 }
-
 #line_up .imgBox {
     position: absolute;
     top: 0;
@@ -258,14 +260,12 @@ button:hover{
     z-index: 2;
     transition: all 0.5s ease-in-out;
 }
-
 #line_up .imgBox img {
     width: 20rem;
     height: 20rem;
     object-fit: cover;
     resize: both;
 }
-
 #line_up .content {
     position: absolute;
     top: 0;
@@ -281,7 +281,6 @@ button:hover{
     text-align: center;
     transition: 0.5s ease-in-out;
 }
-
 #line_up .content h2 {
     display: block;
     font-size: 2rem;
@@ -290,14 +289,12 @@ button:hover{
     line-height: 2rem;
     letter-spacing: 1px;
 }
-
 .span_line-up {
     color: rgb(37,170,150);
     font-size: 1.1rem;
     font-weight: 300;
     letter-spacing: 2px;
 }
-
 @media (max-width: 600px) {
     #line_up  .container .box:hover .content {
         transform: translate(0, 3.5rem);
@@ -330,9 +327,8 @@ button:hover{
 #contact .content{
     text-align: center;
 }
-#contact h2{
-
-    font-size: 36px;
+.h2_contact h2{
+    font-size: 50px;
     font-weight: 500;
     color: white;
 }
@@ -348,13 +344,13 @@ button:hover{
     margin-top: 30px;
 }
 .container .contactInfo{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
 .container .contactInfo .box{
     position: relative;
-    padding: 20px 0;
+    padding: 30px 0;
     display: flex;
 }
 .container .contactInfo .box .icon{
@@ -378,11 +374,17 @@ button:hover{
 .container .contactInfo .box .text h3{
     font-weight: 500;
     color: #00bcd4;
+    font-size: 22px;
+}
+.container .contactInfo .box .text p{
+    font-size: 20px;
 }
 .contactForm{
     width: 40%;
     padding: 40px;
     background: white;
+    margin-top: 75px;
+
 }
 .contactForm h2{
     font-size: 30px;
@@ -432,17 +434,14 @@ button:hover{
     padding: 10px;
     font-size: 18px;
 }
-
 .content{
     color: white;
     text-align: center;
 }
-
 .content p{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 @media (max-width: 991px) {
     .contact{
         padding: 50px;
@@ -459,8 +458,8 @@ button:hover{
     }
 }
 
-
 /*Hier begint "Footer" sectie*/
+
 footer{
     position: relative;
     width: 100%;
