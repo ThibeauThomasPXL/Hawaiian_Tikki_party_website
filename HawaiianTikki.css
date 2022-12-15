@@ -572,10 +572,7 @@ h2.h2_contact {
 }
 
 /* Partners1 SECTION*/
-#Partners1 *{
-    padding: 0;
-    margin: 0;
-}
+
 #Partners body {
     background: #0b69ed;
     height: 100vh;
@@ -590,16 +587,22 @@ h2.h2_contact {
 }
 .wrapper {
     display: flex;
-    width: 750px;
     margin: 0 auto;
+    width: 80%;
     overflow: hidden;
     border-radius: 180px;
-    padding: 2.5rem;
+    height: 200px;
     background: #ddd;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 50px;
 }
+
+#Partners1 img{
+    height: 200px;
+}
+
 .item {
-    animation: animate 25s alternate linear infinite;
+    animation: animate 40s alternate linear infinite;
 }
 .container:hover .item {
     animation-play-state: paused;
