@@ -1,6 +1,6 @@
 <!------Thibeau Thomas------>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
@@ -25,13 +25,12 @@
             <source src="Assets/HWTP2022.mp4" type="video/mp4">
         </video>
         <div class="navigatiebar">
-            <img src="Assets/Logo_HTP.png" class="logo" alt="">
-
+            <a href="#home"><img src="Assets/Logo_HTP.png" class="logo" alt=""></a>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About us</a></li>
                 <li><a href="#line_up">Line-Up</a></li>
-                <li><a href="#">Tickets</a></li>
+                <li><a href="#Tickets">Tickets</a></li>
                 <li><a href="#">Busuren</a></li>
                 <li><a href="#">Partners</a></li>
                 <li><a href="#Contact">Contact</a></li>
@@ -41,8 +40,8 @@
             <h1>Hawaiian Tikki Party</h1>
             <p>Vrijdag 27 Juli 2023 </p>
             <div>
-                <button type="button"><span class="span_content"></span>Line-Up</button>
-                <button type="button"><span class="span_content"></span>Tickets</button>
+                <a href="#line_up"><button type="button"><span class="span_content"></span>Line-Up</button></a>
+                <a href="#Tickets"><button type="button"><span class="span_content"></span>Tickets</button></a>
             </div>
         </div>
     </div>
@@ -51,7 +50,7 @@
 <!------"About us" sectoin start------>
 <section class="about" id="about">
     <div class="main">
-        <img src="Assets/about_us.jpg">
+        <img src="Assets/about_us.jpg" alt="">
         <div class="about-text">
             <h1>About Us</h1>
             <h2>Jaarlijks Fuif <span class="span_about">/ Festival</span></h2>
@@ -60,7 +59,8 @@
                 huisbereide cocktails en de fijnste muziek van het moment.
                 Dit event vindt plaats midden in de zomer wat het tropische effect op het terrein alleen nog
                 maar versterkt.</p>
-            <button type="button">Meer info</button>
+            <a href="https://www.facebook.com/hawaiian.tikki.party" target="_blank" rel="noopener noreferrer">
+                <button type="button">Meer info</button></a>
         </div>
     </div>
 </section>
@@ -75,7 +75,7 @@
         <div class="container">
             <div class="box">
                 <div class="imgBox">
-                    <img src="Assets/kaptivimg.jpg">
+                    <img src="Assets/kaptivimg.jpg" alt="">
                 </div>
                 <div class="content">
                     <h2>Kaptiv</br>
@@ -84,7 +84,7 @@
             </div>
             <div class="box">
                 <div class="imgBox">
-                    <img src="Assets/amaniimg.jpg">
+                    <img src="Assets/amaniimg.jpg" alt="">
                 </div>
                 <div class="content">
                     <h2>Michael Amani</br>
@@ -93,7 +93,7 @@
             </div>
             <div class="box">
                 <div class="imgBox">
-                    <img src="Assets/doubleuimg.jpg">
+                    <img src="Assets/doubleuimg.jpg" alt="">
                 </div>
                 <div class="content">
                     <h2>Double-U</br>
@@ -102,7 +102,7 @@
             </div>
             <div class="box">
                 <div class="imgBox">
-                    <img src="Assets/dimitriimg.jpg">
+                    <img src="Assets/dimitriimg.jpg" alt="">
                 </div>
                 <div class="content">
                     <h2>Dimitri Wouters</br>
@@ -140,8 +140,54 @@
 </div>
 
     <!------"Busuren" sectoin start------>
-    <!------"Line-Up" sectoin start------>
+
     <!------"Partners" sectoin start------>
+<div id="Partners">
+    <div class="partners_wrap">
+        <h1>Partners</h1>
+        <hr />
+        <div class="partners-in">
+        <ul>
+            <li>
+                <img src="Assets/inbev.jpg" alt="">
+            </li>
+            <li>
+                <img src="Assets/coca_cola.jpg" alt="">
+            </li>
+            <li>
+                <img src="Assets/inbev.jpg" alt="">
+            </li>
+            <li>
+                <img src="Assets/inbev.jpg" alt="">
+            </li>
+            <li>
+                <img src="Assets/inbev.jpg" alt="">
+            </li>
+            <li>
+                <img src="Assets/inbev.jpg" alt="">
+            </li>
+            <li>
+                <img src="Assets/inbev.jpg" alt="">
+            </li>
+            <li>
+                <img src="Assets/inbev.jpg" alt="">
+            </li>
+            <li>
+                <img src="Assets/inbev.jpg" alt="">
+            </li>
+            <li>
+                <img src="Assets/inbev.jpg" alt="">
+            </li>
+            <li>
+                <img src="Assets/inbev.jpg" alt="">
+            </li>
+            <li>
+                <img src="Assets/inbev.jpg" alt="">
+            </li>
+        </ul>  
+        </div>
+    </div>
+</div>
     <!------"Contact" sectoin start------>
     <div id="Contact">
         <section class="contact">
@@ -171,15 +217,21 @@
                     <form>
                         <h2>Send message</h2>
                         <div class="inputbox">
-                            <input type="text" name="" required="required">
+                            <label>
+                                <input type="text" name="" required="required">
+                            </label>
                             <span class="span_contact">Volledige Naam</span>
                         </div>
                         <div class="inputbox">
-                            <input type="text" name="" required="required">
+                            <label>
+                                <input type="text" name="" required="required">
+                            </label>
                             <span class="span_contact">E-mailadres</span>
                         </div>
                         <div class="inputbox">
-                            <textarea required="required"></textarea>
+                            <label>
+                                <textarea required="required"></textarea>
+                            </label>
                             <span class="span_contact">Type hier je vraag...</span>
                         </div>
                         <div class="inputbox">
@@ -202,7 +254,7 @@
             <a href="https://www.instagram.com/hawaiiantikkiparty/" target="_blank" rel="noopener noreferrer"><i
                     class="fab fa-instagram"></i></a>
         </div>
-        <p class="end">© 2022 Hawaiian Tikki | Design by TIBEX</p>
+        <p class="end">© 2022 Hawaiian Tikki. Alle rechten voorbehouden. | Design by TIBEX</p>
 
     </footer>
 
