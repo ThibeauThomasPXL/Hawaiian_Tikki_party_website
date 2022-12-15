@@ -499,7 +499,10 @@ h2.h2_contact {
 }
 .h1_tickets{
     padding-bottom: 100px;
+    text-decoration: underline #333333;
+    
 }
+
 /* Partners SECTION*/
 #Partners *{
     margin: 0;
@@ -530,6 +533,13 @@ h2.h2_contact {
     margin: 10px auto;
     color: #22A895;
 }
+
+.partners_wrap{
+    color: white;
+    text-align: center;
+    text-decoration: underline #22A895;
+}
+
 .partners-in{
     width: 100%;
     height: auto;
