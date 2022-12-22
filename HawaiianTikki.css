@@ -1,4 +1,4 @@
-/*Thibeau Thomas*/
+/*Thibeau Thomas1*/
 
 @font-face{
     font-family: 'martellas_scriptdemo_';
@@ -10,19 +10,18 @@
 html{
     scroll-behavior:smooth
 }
-body{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-}
 h1{
     font-weight: 500;
     font-family: 'martellas_scriptdemo_', Arial, sans-serif;
     font-size: 80px;
+    padding-top: 30px;
 }
 
-/*Hier begint "Homepage" sectie*/
 
+/*Hier begint "Homepage" sectie*/
+body {
+    overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -41,7 +40,7 @@ h1{
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
 }
 #home .logo{
     width: 120px;
@@ -51,30 +50,37 @@ h1{
     transition: width 2s, height 2s, transform 1s;
     transform: rotate(360deg);
 }
-#home .navigatiebar{
+#home .navbar{
 
-    width: 85%;
+    width: 100%;
     margin: auto;
-    padding: 35px 0;
+    padding: 5px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
-#home .navigatiebar ul li{
+.navbar .logo{
+    font-size: 2em;
+    margin-left: 60px;
+}
+#home .navbar ul li{
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
     position: relative;
-
+    margin: 0 80px 0 5px;
+    font-size: 16px;
 }
-#home .navigatiebar ul li a{
+nav.black ul{
+    background: black;
+}
+#home .navbar ul li a{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
-#home .navigatiebar ul li::after{
+#home .navbar ul li::after{
     content: '';
     height: 3px;
     width: 0;
@@ -85,7 +91,7 @@ h1{
     transition: 0.5s;
 
 }
-#home .navigatiebar ul li:hover::after{
+#home .navbar ul li:hover::after{
     width: 100%;
 }
 #home .content{
@@ -94,15 +100,17 @@ h1{
     transform: translateY(-50%);
     text-align: center;
     color: white;
+    z-index: -1;
 }
 #home .content h1 {
     font-family: 'martellas_scriptdemo_', Arial, sans-serif;
     font-size: 110px;
     font-weight:normal;
     font-style:normal;
-    text-shadow: 4px 0 0 #000, 0 -4px 0 #000, 0 4px 0 #000, -4px 0 0 #000;
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
     position: center;
     text-align: center;
+
 }
 #home .content p{
     margin: 10px auto;
@@ -145,6 +153,70 @@ h1{
 #home button:hover span{
     width: 100%;
 }
+.navbar .menu-hamburger{
+    display: none;
+    width: 50px;
+    position: absolute;
+    top: 45px;
+    right: 50px;
+    color: white;
+    z-index: 2;
+}
+@media screen and (max-width: 1300px){
+    body {
+        overflow-x: hidden;
+    }
+    #home .navbar ul li a{
+        color: white;
+
+    }
+    .navbar{
+        padding: 0;
+        margin-top: 5px;
+
+
+    }
+    .navbar .menu-hamburger{
+        display: block;
+    }
+    .navbar .menu-hamburger:hover{
+        transform: scale(1.3);
+        transition: .3s;
+    }
+
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(9px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 1s ease;
+        z-index: 2;
+    }
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #home .navbar ul li{
+        margin: 30px 0;
+        font-size: 17px;
+
+    }
+    .navbar .logo{
+        margin-left: 40px;
+    }
+}
 
 /*Hier begint "About-us" sectie*/
 
@@ -156,6 +228,7 @@ h1{
 .about img{
     height: auto;
     width:400px;
+    border-radius: 50px;
 }
 .about-text{
     width: 550px;
@@ -169,15 +242,13 @@ h1{
     justify-content: space-around;
 }
 .about-text h1{
-    text-shadow: 4px 0 0 #000, 0 -4px 0 #000, 0 4px 0 #000, -4px 0 0 #000;
     color: white;
-    font-size: 75px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin-bottom: 20px;
     text-decoration: underline #22A895;
 }
 .about-text h2{
-    color: white;;
+    color: white;
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
@@ -206,6 +277,7 @@ button{
 button:hover{
     background-color: transparent;
 }
+
 
 
 /*Hier begint "Line-Up" sectie*/
@@ -243,9 +315,9 @@ button:hover{
     color: white;
     width: 1130px;
     margin: 0 auto;
-    padding-top: 25px;
     text-align: center;
     text-decoration: underline #22A895;
+    text-transform: uppercase;
 }
 #line_up .container .box {
     position: relative;
@@ -311,24 +383,256 @@ button:hover{
     #line_up .container .box:hover .imgBox {
         transform: translate(0, -3.5rem);
     }
+
 }
+
 /*Hier begint "Tickets" sectie*/
+
 .Tickets{
     background: black;
-    width: 100vw;
-    min-width: 100vw;
+    width: 50vw;
+    min-width: 99vw;
 }
 .h1_tickets{
     color: white;
     width: 1130px;
     margin: 0 auto;
-    padding-top: 25px;
     text-align: center;
     text-decoration: underline #22A895;
+    text-transform: uppercase;
+    padding-bottom: 80px;
 }
 .esq-store{
     min-width: 1150px;
     min-height: 1000px;
+}
+
+/*Hier begint "Busuren" sectie*/
+
+#bus_uren{
+    background: #3231;
+}
+#bus_uren *{
+    box-sizing: border-box;
+
+}
+.table_container{
+    padding: 0 10%;
+    margin: 40px auto 70px;
+}
+.table_container h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-shadow: 4px 0 0 #000, 0 -4px 0 #000, 0 4px 0 #000, -4px 0 0 #000;
+}
+.table_container h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 65px;
+    font-weight: 500;
+    font-family: 'martellas_scriptdemo_', Arial, sans-serif;
+    padding-top: 15px;
+    text-shadow: 4px 0 0 #000, 0 -4px 0 #000, 0 4px 0 #000, -4px 0 0 #000;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead{
+    background-color: #22A895;
+}
+.table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    opacity: 1;
+    padding:12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+}
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: white;
+    background-color: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e385;
+}
+.table .text_open{
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 1px;
+    color: #22A895;
+}
+.table_container1{
+    padding: 0 10%;
+    margin: 40px auto 50px;
+}
+.table_container1 h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 65px;
+    font-weight: 500;
+    font-family: 'martellas_scriptdemo_', Arial, sans-serif;
+    padding-top: 15px;
+    text-shadow: 4px 0 0 #000, 0 -4px 0 #000, 0 4px 0 #000, -4px 0 0 #000;
+}
+.table1{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table1 thead{
+    background-color: #22A895;
+}
+.table1 thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    opacity: 1;
+    padding:12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+}
+.table1 tbody tr td{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: white;
+    background-color: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e385;
+}
+.table1 .text_open{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #22A895;
+}
+@media (max-width: 768px) {
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 25px;
+    }
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table td:before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+    }
+    .table .text_open{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .table1 thead{
+        display: none;
+    }
+    .table1, .table1 tbody, .table1 tr, .table1 td{
+        display: block;
+        width: 100%;
+    }
+    .table1 tr{
+        margin-bottom: 25px;
+    }
+    .table1 tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table1 td:before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+    }
+    .table1 .text_open{
+        display: none;
+    }
+}
+
+/* Partners SECTION*/
+#Partners *{
+    box-sizing: border-box;
+
+}
+#Partners .partners {
+    background-color: #191919;
+}
+#Partners body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners .container_partners {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#Partners .partner-titel{
+    color: white;
+    width: 1130px;
+    text-align: center;
+    text-decoration: underline #22A895;
+    text-transform: uppercase;
+    margin: 30px auto 0;
+}
+.container_partners{
+    padding-bottom: 50px;
+}
+#Partners .container_partners .box_partners {
+    position: relative;
+    width: 16rem;
+    height: 7rem;
+    margin:0.8em;
+}
+#Partners .imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+#Partners .imgBox img {
+    width: 16rem;
+    height: 7rem;
+    object-fit: cover;
+    resize: both;
+    border-radius: 18px;
 }
 
 /*Hier begint "Contact" sectie*/
@@ -342,7 +646,7 @@ button:hover{
 .contact{
     position: relative;
     min-height: 100vh;
-    padding: 50px 100px;
+    padding: 30px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -411,20 +715,21 @@ button:hover{
     width: 40%;
     padding: 40px;
     background: white;
-    margin-top: 75px;
+    margin-top: 60px;
+    border-radius: 18px;
 }
 .contactForm h2{
     font-size: 30px;
     color: #333;
     font-weight: 500;
 }
-.contactForm .inputbox{
+.contactForm .input_box{
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
-.contactForm .inputbox input,
-.contactForm .inputbox textarea{
+.contactForm .input_box input,
+.contactForm .input_box textarea{
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
@@ -434,7 +739,7 @@ button:hover{
     outline: none;
     resize: none;
 }
-.contactForm .inputbox .span_contact{
+.contactForm .input_box .span_contact{
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -444,15 +749,16 @@ button:hover{
     transition: 0.5s;
     color: #666;
 }
-.contactForm .inputbox input:focus ~ .span_contact,
-.contactForm .inputbox input:valid ~ .span_contact,
-.contactForm .inputbox textarea:focus ~ .span_contact,
-.contactForm .inputbox textarea:valid ~ .span_contact{
+
+.contactForm .input_box input:focus ~ .span_contact,
+.contactForm .input_box input:valid ~ .span_contact,
+.contactForm .input_box textarea:focus ~ .span_contact,
+.contactForm .input_box textarea:valid ~ .span_contact{
     color: #e91e63;
     font-size: 12px;
     transform: translateY(-20px);
 }
-.contactForm .inputbox input[type="submit"]{
+.contactForm .input_box input[type="submit"]{
     width: 100px;
     background: rgb(37,170,150);
     color: white;
@@ -468,15 +774,11 @@ button:hover{
 .content p{
     margin-top: 20px;
     margin-bottom: 20px;
-    /* HIER ZET JE DE ONDERSTE TEKST GROTER */
     font-size: 25px;
 }
-
 h2.h2_contact {
-    /* HIER ZET JE DE TITEL GROTER */
     font-size: 35px;
 }
-
 @media (max-width: 991px) {
     .contact{
         padding: 50px;
@@ -493,143 +795,6 @@ h2.h2_contact {
     }
 }
 
-/* TICKET SECTION*/
-#Tickets *{
-    background-color: #22A895;
-
-}
-#Tickets iframe {
-    min-height: 400px;
-    width: 400px;
-}
-.h1_tickets{
-    padding-bottom: 100px;
-    text-decoration: underline #333333;
-    
-}
-
-/* Partners SECTION*/
-#Partners *{
-    margin: 0;
-    box-sizing: border-box;
-    background-color: #333333;
-
-}
-#Partners body{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-}
-.partners_wrap{
-    width: 100%;
-    min-height: 500px;
-    text-align: center;
-}
-.partners_wrap h1{
-    color: white;
-    padding-top: 30px;
-}
-.partners_wrap hr{
-    width: 15%;
-    height: 5px;
-    border: none;
-    background: #22A895;
-    margin: 10px auto;
-    color: #22A895;
-}
-
-.partners_wrap{
-    color: white;
-    text-align: center;
-    text-decoration: underline #22A895;
-}
-
-.partners-in{
-    width: 100%;
-    height: auto;
-}
-.partners-in ul{
-    padding: 25px;
-    margin: 0;
-}
-.partners-in ul li{
-    list-style: none;
-    display: inline-block;
-    width: 200px;
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 10px;
-
-}
-.partners-in ul li img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transition: 1s;
-}
-.partners-in ul li:hover{
-    transform: scale(1.3);
-    z-index: 2;
-    overflow: hidden;
-}
-
-/* Partners1 SECTION*/
-
-#Partners body {
-    background: #0b69ed;
-    height: 100vh;
-}
-.slider-area h1 {
-    text-align: center;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 100px 0 30px 0;
-    color: #fff;
-}
-.wrapper {
-    display: flex;
-    margin: 0 auto;
-    width: 80%;
-    overflow: hidden;
-    border-radius: 180px;
-    height: 200px;
-    background: #ddd;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-bottom: 50px;
-}
-
-#Partners1 img{
-    height: 200px;
-}
-
-.item {
-    animation: animate 40s alternate linear infinite;
-}
-.container:hover .item {
-    animation-play-state: paused;
-}
-@keyframes animate {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-1100px, 0, 0);
-    }
-}
-@media (max-width:767px) {
-    .slider-area h2 {
-        font-size: 30px;
-    }
-    .wrapper {
-        width: 95%;
-        border-radius: 0;
-        padding: 0;
-    }
-}
 
 /*Hier begint "Footer" sectie*/
 
@@ -683,6 +848,11 @@ footer p:nth-child(2){
     color: white;
     bottom: 35px;
     font-size: 10px;
+}
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
