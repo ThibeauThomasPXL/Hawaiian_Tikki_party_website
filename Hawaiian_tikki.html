@@ -1,4 +1,4 @@
-<!------Thibeau Thomas------>
+<!------Thibeau Thomas1------>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -17,6 +17,7 @@
     <script src="https://esq-store.s3.amazonaws.com/public/js/embed.js"></script>
 
     <title>Hawaiian Tikki</title>
+
 </head>
 <body>
 <div id="home">
@@ -24,28 +25,42 @@
         <video autoplay muted loop id="myVideo">
             <source src="Assets/HWTP2022.mp4" type="video/mp4">
         </video>
-        <div class="navigatiebar">
-            <a href="#home"><img src="Assets/Logo_HTP.png" class="logo" alt=""></a>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#line_up">Line-Up</a></li>
-                <li><a href="#Tickets">Tickets</a></li>
-                <li><a href="#">Busuren</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
+        <header>
+            <div class="navbar">
+                <a href="#home"><img src="Assets/Logo_HTP.png" class="logo" alt=""></a>
+                <div class="nav-links">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#line_up">Line-Up</a></li>
+                        <li><a href="#Tickets">Tickets</a></li>
+                        <li><a href="#bus_uren">Busuren</a></li>
+                        <li><a href="#Partners">Partners</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <img src=Assets/hamburger_menu.webp alt="menu hamburger"
+                     class="menu-hamburger">
+            </div>
+        </header>
         <div class="content">
             <h1>Hawaiian Tikki Party</h1>
             <p>Vrijdag 27 Juli 2023 </p>
             <div>
-                <a href="#line_up"><button type="button"><span class="span_content"></span>Line-Up</button></a>
-                <a href="#Tickets"><button type="button"><span class="span_content"></span>Tickets</button></a>
+                <a href="#line_up">
+                    <button type="button"><span class="span_content"></span>Line-Up</button>
+                </a>
+                <a href="#Tickets">
+                    <button type="button"><span class="span_content"></span>Tickets</button>
+                </a>
             </div>
         </div>
     </div>
 </div>
+
+
 
 <!------"About us" sectoin start------>
 <section class="about" id="about">
@@ -53,17 +68,20 @@
         <img src="Assets/about_us.jpg" alt="">
         <div class="about-text">
             <h1>About Us</h1>
-            <h2>Jaarlijks Fuif <span class="span_about">/ Festival</span></h2>
+            <h2>Jaarlijk Fuif</h2>
             <p>Jaarlijks organiseren wij met Jeugdhuis d’Addarios onze Hawaiian Tikki Party. Een gezellige sfeer
                 en een prachtig Hawaiiaans strand staan centraal bij ons. Daarbij serveren wij u de lekkerste
                 huisbereide cocktails en de fijnste muziek van het moment.
-                Dit event vindt plaats midden in de zomer wat het tropische effect op het terrein alleen nog
+                Dit event vindt plaats op elke laatste vrijdag van Juli wat het tropische effect op het terrein alleen
+                nog
                 maar versterkt.</p>
             <a href="https://www.facebook.com/hawaiian.tikki.party" target="_blank" rel="noopener noreferrer">
-                <button type="button">Meer info</button></a>
+                <button type="button">Meer info</button>
+            </a>
         </div>
     </div>
 </section>
+
 
 <!------"Line-Up" sectoin start------>
 
@@ -128,84 +146,260 @@
     <div class="Tickets">
         <div class="h1_tickets">
             <h1>Tickets</h1>
-        <div id="esq-store"></div>
-        <script>
-            ESQ.embed({
-                link: "https://demo.eventsquare.store/nl/normal/normal-channel",
-                element: "esq-store",
-            });
-        </script>
+            <div id="esq-store"></div>
+            <script>
+                ESQ.embed({
+                    link: "https://demo.eventsquare.store/nl/normal/normal-channel",
+                    element: "esq-store",
+                });
+            </script>
         </div>
     </div>
 </div>
 
-    <!------"Busuren" sectoin start------>
+<!------"Busuren" sectoin start------>
+<div id="bus_uren">
+    <div class="table_container">
+        <h1>Bus Uren</h1>
+        <h2>Bus 1</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Hawaiian Tikki Party</th>
+                <th>21u00</th>
+                <th>22u00</th>
+                <th>23u00</th>
+                <th>00u00</th>
+                <th></th>
+                <th>02u00</th>
+                <th>03u00</th>
+                <th>04u00</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Zelem Jeugdhuis Sfinx</td>
+                <td data-label="21u00">21u05</td>
+                <td data-label="22u00">22u05</td>
+                <td data-label="23u00">23u05</td>
+                <td data-label="00u00">00u05</td>
+                <td data-label=""><span class="text_open"></span></td>
+                <td data-label="02u00">02u05</td>
+                <td data-label="03u00">03u05</td>
+                <td data-label="04u00">04u05</td>
+            </tr>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Schaffen Grote Baan</td>
+                <td data-label="21u00">21u12</td>
+                <td data-label="22u00">22u12</td>
+                <td data-label="23u00">23u12</td>
+                <td data-label="00u00">00u12</td>
+                <td data-label=""><span class="text_open">R</span></td>
+                <td data-label="02u00">02u12</td>
+                <td data-label="03u00">03u12</td>
+                <td data-label="04u00">04u12</td>
+            </tr>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Meldert Kerk</td>
+                <td data-label="21u00">21u16</td>
+                <td data-label="22u00">22u16</td>
+                <td data-label="23u00">23u16</td>
+                <td data-label="00u00">00u16</td>
+                <td data-label=""><span class="text_open">U</span></td>
+                <td data-label="02u00">02u16</td>
+                <td data-label="03u00">03u16</td>
+                <td data-label="04u00">04u16</td>
+            </tr>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Lummen P-Frederickxstraat</td>
+                <td data-label="21u00">21u22</td>
+                <td data-label="22u00">22u22</td>
+                <td data-label="23u00">23u22</td>
+                <td data-label="00u00">00u22</td>
+                <td data-label=""><span class="text_open">S</span></td>
+                <td data-label="02u00">02u22</td>
+                <td data-label="03u00">03u22</td>
+                <td data-label="04u00">04u22</td>
+            </tr>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Schalebroek Wijk</td>
+                <td data-label="21u00">21u25</td>
+                <td data-label="22u00">22u25</td>
+                <td data-label="23u00">23u25</td>
+                <td data-label="00u00">00u25</td>
+                <td data-label=""><span class="text_open">T</span></td>
+                <td data-label="02u00">02u25</td>
+                <td data-label="03u00">03u25</td>
+                <td data-label="04u00">04u25</td>
+            </tr>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Hawaiian Tikki Party</td>
+                <td data-label="21u00">21u29</td>
+                <td data-label="22u00">22u29</td>
+                <td data-label="23u00">23u29</td>
+                <td data-label="00u00">00u29</td>
+                <td data-label=""><span class="text_open"> </span></td>
+                <td data-label="02u00">02u29</td>
+                <td data-label="03u00">03u29</td>
+                <td data-label="04u00">04u29</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table_container1">
+        <h2>Bus 2</h2>
+        <table class="table1">
+            <thead>
+            <tr>
+                <th>Hawaiian Tikki Party</th>
+                <th>21u00</th>
+                <th>22u00</th>
+                <th>23u00</th>
+                <th>00u00</th>
+                <th></th>
+                <th>02u00</th>
+                <th>03u00</th>
+                <th>04u00</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Zelem Jeugdhuis Sfinx</td>
+                <td data-label="21u00">21u05</td>
+                <td data-label="22u00">22u05</td>
+                <td data-label="23u00">23u05</td>
+                <td data-label="00u00">00u05</td>
+                <td data-label=""><span class="text_open"></span></td>
+                <td data-label="02u00">02u05</td>
+                <td data-label="03u00">03u05</td>
+                <td data-label="04u00">04u05</td>
+            </tr>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Schaffen Grote Baan</td>
+                <td data-label="21u00">21u12</td>
+                <td data-label="22u00">22u12</td>
+                <td data-label="23u00">23u12</td>
+                <td data-label="00u00">00u12</td>
+                <td data-label=""><span class="text_open">R</span></td>
+                <td data-label="02u00">02u12</td>
+                <td data-label="03u00">03u12</td>
+                <td data-label="04u00">04u12</td>
+            </tr>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Meldert Kerk</td>
+                <td data-label="21u00">21u16</td>
+                <td data-label="22u00">22u16</td>
+                <td data-label="23u00">23u16</td>
+                <td data-label="00u00">00u16</td>
+                <td data-label=""><span class="text_open">U</span></td>
+                <td data-label="02u00">02u16</td>
+                <td data-label="03u00">03u16</td>
+                <td data-label="04u00">04u16</td>
+            </tr>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Lummen P-Frederickxstraat</td>
+                <td data-label="21u00">21u22</td>
+                <td data-label="22u00">22u22</td>
+                <td data-label="23u00">23u22</td>
+                <td data-label="00u00">00u22</td>
+                <td data-label=""><span class="text_open">S</span></td>
+                <td data-label="02u00">02u22</td>
+                <td data-label="03u00">03u22</td>
+                <td data-label="04u00">04u22</td>
+            </tr>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Schalebroek Wijk</td>
+                <td data-label="21u00">21u25</td>
+                <td data-label="22u00">22u25</td>
+                <td data-label="23u00">23u25</td>
+                <td data-label="00u00">00u25</td>
+                <td data-label=""><span class="text_open">T</span></td>
+                <td data-label="02u00">02u25</td>
+                <td data-label="03u00">03u25</td>
+                <td data-label="04u00">04u25</td>
+            </tr>
+            <tr>
+                <td data-label="Hawaiian Tikki Party">Hawaiian Tikki Party</td>
+                <td data-label="21u00">21u29</td>
+                <td data-label="22u00">22u29</td>
+                <td data-label="23u00">23u29</td>
+                <td data-label="00u00">00u29</td>
+                <td data-label=""><span class="text_open"> </span></td>
+                <td data-label="02u00">02u29</td>
+                <td data-label="03u00">03u29</td>
+                <td data-label="04u00">04u29</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
-    <!------"Partners" sectoin start------>
+<!------"Partners" sectoin start------>
+
 <div id="Partners">
-    <div class="partners_wrap">
-        <h1>Partners</h1>
-        <hr />
-        <div class="partners-in">
-        <ul>
-            <li>
-                <img src="Assets/inbev.jpg" alt="">
-            </li>
-            <li>
-                <img src="Assets/coca_cola.jpg" alt="">
-            </li>
-            <li>
-                <img src="Assets/inbev.jpg" alt="">
-            </li>
-            <li>
-                <img src="Assets/inbev.jpg" alt="">
-            </li>
-            <li>
-                <img src="Assets/inbev.jpg" alt="">
-            </li>
-            <li>
-                <img src="Assets/inbev.jpg" alt="">
-            </li>
-            <li>
-                <img src="Assets/inbev.jpg" alt="">
-            </li>
-            <li>
-                <img src="Assets/inbev.jpg" alt="">
-            </li>
-            <li>
-                <img src="Assets/inbev.jpg" alt="">
-            </li>
-            <li>
-                <img src="Assets/inbev.jpg" alt="">
-            </li>
-            <li>
-                <img src="Assets/inbev.jpg" alt="">
-            </li>
-            <li>
-                <img src="Assets/inbev.jpg" alt="">
-            </li>
-        </ul>  
+    <div class="partners">
+        <div class="partner-titel">
+            <h1>Partners</h1>
+            <div class="container_partners">
+                <div class="box_partners">
+                    <div class="imgBox">
+                        <img src="Assets/inbev.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box_partners">
+                    <div class="imgBox">
+                        <img src="Assets/coca_cola.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box_partners">
+                    <div class="imgBox">
+                        <img src="Assets/inbev.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box_partners">
+                    <div class="imgBox">
+                        <img src="Assets/inbev.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box_partners">
+                    <div class="imgBox">
+                        <img src="Assets/inbev.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box_partners">
+                    <div class="imgBox">
+                        <img src="Assets/inbev.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box_partners">
+                    <div class="imgBox">
+                        <img src="Assets/inbev.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box_partners">
+                    <div class="imgBox">
+                        <img src="Assets/inbev.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box_partners">
+                    <div class="imgBox">
+                        <img src="Assets/inbev.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box_partners">
+                    <div class="imgBox">
+                        <img src="Assets/inbev.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div id="Partners1">
-    <div class="slider-area">
-        <h1>Our Clients</h1>
-        <div class="wrapper">
-            <div class="item"><img alt="" src="Assets/inbev.jpg"></div>
-            <div class="item"><img alt="" src="Assets/inbev.jpg"></div>
-            <div class="item"><img alt="" src="Assets/coca_cola.jpg"></div>
-            <div class="item"><img alt="" src="Assets/coca_cola.jpg"></div>
-            <div class="item"><img alt="" src="Assets/coca_cola.jpg"></div>
-        </div>
-    </div>
-</div>
-    <!------"Contact" sectoin start------>
+    <!------"Contact" sectoin1 start------>
     <div id="Contact">
         <section class="contact">
             <div class="content">
                 <h1 class="h2_contact">Contact Us</h1>
-                <p>Heb je een vraag voor ons, of wil je iets anders zeggen. Neem dan gerust contact
+                <p>Heb je een vraag voor ons, of wil je iets anders weten. Neem dan gerust contact
                     met ons op.</p>
             </div>
             <div class="container">
@@ -227,26 +421,26 @@
                 </div>
                 <div class="contactForm">
                     <form>
-                        <h2>Send message</h2>
-                        <div class="inputbox">
+                        <h2>Verstuur Bericht</h2>
+                        <div class="input_box">
                             <label>
                                 <input type="text" name="" required="required">
                             </label>
                             <span class="span_contact">Volledige Naam</span>
                         </div>
-                        <div class="inputbox">
+                        <div class="input_box">
                             <label>
                                 <input type="text" name="" required="required">
                             </label>
                             <span class="span_contact">E-mailadres</span>
                         </div>
-                        <div class="inputbox">
+                        <div class="input_box">
                             <label>
                                 <textarea required="required"></textarea>
                             </label>
                             <span class="span_contact">Type hier je vraag...</span>
                         </div>
-                        <div class="inputbox">
+                        <div class="input_box">
                             <input type="submit" name="" value="Send">
                         </div>
 
@@ -255,7 +449,9 @@
             </div>
         </section>
     </div>
+</div>
     <!------"Footer" sectoin start------>
+
     <footer>
         <p>Hawaiian Tikki Party</p>
         <p>Voor meer info over de "Hawaiian Tikki Party" - druk
@@ -271,4 +467,14 @@
     </footer>
 
 </body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+
 </html>
