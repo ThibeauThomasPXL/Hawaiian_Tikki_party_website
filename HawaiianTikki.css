@@ -277,9 +277,6 @@ button{
 button:hover{
     background-color: transparent;
 }
-
-
-
 /*Hier begint "Line-Up" sectie*/
 
 *,
@@ -312,12 +309,12 @@ button:hover{
     flex-wrap: wrap;
 }
 #line_up .titelh1{
-    color: white;
-    width: 1130px;
-    margin: 0 auto;
     text-align: center;
-    text-decoration: underline #22A895;
+    color: white;
+    margin-bottom: 25px;
     text-transform: uppercase;
+    text-decoration: underline #22A895;
+
 }
 #line_up .container .box {
     position: relative;
@@ -390,22 +387,22 @@ button:hover{
 
 .Tickets{
     background: black;
-    width: 50vw;
-    min-width: 99vw;
+    padding: 30px;
 }
 .h1_tickets{
-    color: white;
-    width: 1130px;
-    margin: 0 auto;
     text-align: center;
-    text-decoration: underline #22A895;
+    color: white;
+    margin-bottom: 25px;
     text-transform: uppercase;
-    padding-bottom: 80px;
+    text-decoration: underline #22A895;
+
 }
 .esq-store{
     min-width: 1150px;
     min-height: 1000px;
 }
+
+
 
 /*Hier begint "Busuren" sectie*/
 
@@ -583,6 +580,11 @@ button:hover{
     box-sizing: border-box;
 
 }
+#Partners body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #Partners .partners {
     background-color: #191919;
 }
@@ -613,10 +615,11 @@ button:hover{
     padding-bottom: 50px;
 }
 #Partners .container_partners .box_partners {
+
     position: relative;
-    width: 16rem;
-    height: 7rem;
-    margin:0.8em;
+    width: 10rem;
+    height: 2.5rem;
+    margin:4em;
 }
 #Partners .imgBox {
     position: absolute;
@@ -633,6 +636,16 @@ button:hover{
     object-fit: cover;
     resize: both;
     border-radius: 18px;
+}
+@media only screen and (max-width: 800px) {
+    .container_partners {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .box_partners {
+        width: 100%;
+    }
 }
 
 /*Hier begint "Contact" sectie*/
@@ -794,15 +807,13 @@ h2.h2_contact {
         width: 100%;
     }
 }
-
-
 /*Hier begint "Footer" sectie*/
 
 footer{
     position: relative;
     width: 100%;
     height: 300px;
-    background: #101010;
+    background: black;
     display: flex;
     flex-direction: column;
     align-items: center;
