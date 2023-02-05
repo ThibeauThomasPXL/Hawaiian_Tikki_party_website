@@ -29,7 +29,7 @@ body {
 
 }
 #home .hero {
-    margin-bottom: 145px;
+    margin-bottom:190px;
 }
 #home #myVideo {
     width: 100vw;
@@ -66,12 +66,11 @@ body {
 }
 .navbar.sticky{
     padding: 3px 0;
-    background: white;
-
-
+    background: #22A895;
+    opacity: 90%;
 }
 .navbar .logo{
-    font-size: 3em;
+    font-size: 4em;
     margin-left: 60px;
 }
 #home .navbar ul li{
@@ -80,7 +79,6 @@ body {
     display: inline-block;
     position: relative;
     margin: 0 60px 0 5px;
-    font-size: 16px;
 }
 nav.black ul{
     background: black;
@@ -114,13 +112,13 @@ nav.black ul{
 }
 #home .content h1 {
     font-family: 'martellas_scriptdemo_', Arial, sans-serif;
-    font-size: 110px;
+    font-size: 150px;
     font-weight:normal;
     font-style:normal;
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
     position: center;
     text-align: center;
-    padding-top: 300px;
+    padding-top: 500px;
 }
 #home .content p{
     margin: 10px auto;
@@ -163,9 +161,9 @@ nav.black ul{
 }
 .navbar .menu-hamburger{
     display: none;
-    width: 50px;
+    width: 40px;
     position: absolute;
-    top: 40px;
+    top: 5px;
     right: 50px;
     color: white;
     z-index: 2;
@@ -227,7 +225,15 @@ nav.black ul{
 }
 .navbar.sticky ul li a{
     color: black;
+    font-size: 15px;
 }
+.navbar.sticky.navbar{
+    height: 50px;
+}
+.navbar.sticky.navbar img{
+    margin-top: 30px;
+}
+
 
 /*Hier begint "About-us" sectie*/
 
