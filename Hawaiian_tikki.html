@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <title>Hawaiian Tikki</title>
+    <!------ <link naar de css>------>
     <link rel="stylesheet" href="HawaiianTikki.css">
-    <!------ <link rel="preconnect" href="https://fonts.gstatic.com">------>
+    <!------ <link naar het lettertype>------>
     <script src="https://use.fontawesome.com/8c4d76df4e.js"></script>
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,
-    700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
+    <!------ <link naar javascript>------>
+    <script src="Hawaiian%20_Tikki.js"></script>
+    <!------ <link voor de icoontjes in de footer>------>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
-
+    <!------ <link naar eventsquare>------>
     <script src="https://esq-store.s3.amazonaws.com/public/js/embed.js"></script>
 
-    <title>Hawaiian Tikki</title>
+
 
 </head>
 <body>
@@ -30,23 +30,31 @@
                 <a href="#"><img src="Assets/Logo_HTP.png" class="logo" alt=""></a>
                 <div class="nav-links">
                     <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#about">About us</a></li>
-                            <li><a href="#line_up">Line-Up</a></li>
-                            <li><a href="#Tickets">Tickets</a></li>
-                            <li><a href="#bus_uren">Busuren</a></li>
-                            <li><a href="#Partners">Partners</a></li>
-                            <li><a href="#Contact">Contact</a></li>
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#line_up">Line-Up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Tickets">Tickets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#bus_uren">Busuren</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Partners">Partners</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Contact">Contact</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
-                <script type="text/javascript">
-                    window.addEventListener("scroll", function (){
-                        const navbar = document.querySelector(".navbar");
-                        navbar.classList.toggle("sticky", window.scrollY > 0);
-                    })
-                </script>
                 <img src=Assets/hamburger_menu.webp alt="menu hamburger"
                      class="menu-hamburger">
             </div>
@@ -65,7 +73,6 @@
         </div>
     </div>
 </div>
-
 
 
 <!------"About us" sectoin start------>
@@ -89,7 +96,6 @@
 
 
 <!------"Line-Up" sectoin start------>
-
 <div id="line_up">
     <section class="Line-up">
         <div class="titelh1">
@@ -144,6 +150,7 @@
         </div>
     </section>
 </div>
+
 
 <!------"Tickets" sectoin start------>
 <!-- EventSquare Store Embed -->
@@ -413,76 +420,70 @@
         </div>
     </div>
 </div>
-    <!------"Contact" sectoin------>
-    <div id="Contact">
-        <section class="contact">
-            <div class="content">
-                <h1 class="h2_contact">Contact Us</h1>
-                <p>Heb je een vraag voor ons, of wil je iets anders weten. Neem dan gerust contact
-                    met ons op.</p>
-            </div>
-            <div class="container">
-                <div class="contactInfo">
-                    <div class="box">
-                        <div class="icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
-                        <div class="text">
-                            <h3 class="h3_contact">Adres</h3>
-                            <p>Sint-Trudostraat 2,<br>3560 Linkhout</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i></div>
-                        <div class="text">
-                            <h3 class="h3_contact">E-mailadres</h3>
-                            <p>info@hawaiiantikki.be</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contactForm">
-                    <form>
-                        <h2>Verstuur Bericht</h2>
-                        <div class="input_box">
-                            <label>
-                                <input type="text" name="" required="required">
-                            </label>
-                            <span class="span_contact">Volledige Naam</span>
-                        </div>
-                        <div class="input_box">
-                            <label>
-                                <input type="text" name="" required="required">
-                            </label>
-                            <span class="span_contact">E-mailadres</span>
-                        </div>
-                        <div class="input_box">
-                            <label>
-                                <textarea required="required"></textarea>
-                            </label>
-                            <span class="span_contact">Type hier je vraag...</span>
-                        </div>
-                        <div class="input_box">
-                            <input type="submit" name="" value="Send">
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </section>
-    </div>
-</div>
-    <!------"Footer" sectoin start------>
-
-    <footer>
-        <p>Hawaiian Tikki Party</p>
-        <p>Voor meer info, bekijk onze socials.</p>
-        <div class="socials">
-            <a href="https://www.facebook.com/hawaiian.tikki.party" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/hawaiiantikkiparty/" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-instagram"></i></a>
+<!------"Contact" sectoin------>
+<div id="Contact">
+    <section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>Heb je een vraag voor ons, of wil je iets anders weten. Neem dan gerust contact
+                met ons op.</p>
         </div>
-        <p class="end">© 2022 Hawaiian Tikki. Alle rechten voorbehouden. | Design by TIBEX</p>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3 class="h3_contact">Adres</h3>
+                        <p>Sint-Trudostraat 2,<br>3560 Linkhout</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3 class="h3_contact">E-mailadres</h3>
+                        <p>info@hawaiiantikki.be</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Verstuur Bericht</h2>
+                    <div class="input_box">
+                        <input type="text" name="" required="required">
+                        <span class="span_contact">Volledige Naam</span>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" name="" required="required">
+                        <span class="span_contact">E-mailadres</span>
+                    </div>
+                    <div class="input_box">
+                        <textarea required="required"></textarea>
+                        <span class="span_contact">Type hier je vraag...</span>
+                    </div>
+                    <div class="input_box">
+                        <input type="submit" name="" value="Send">
+                    </div>
 
-    </footer>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+<!------"Footer" sectoin start------>
+
+<footer>
+    <p>Hawaiian Tikki Party</p>
+    <p>Stay Connected</p>
+    <div class="socials">
+        <a href="https://www.facebook.com/hawaiian.tikki.party" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/hawaiiantikkiparty/" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-instagram"></i></a>
+    </div>
+    <p class="end">© 2022 Hawaiian Tikki. Alle rechten voorbehouden. | Design by TIBEX</p>
+
+</footer>
 
 </body>
 <script>
@@ -493,6 +494,4 @@
         navLinks.classList.toggle('mobile-menu')
     })
 </script>
-
-
 </html>
