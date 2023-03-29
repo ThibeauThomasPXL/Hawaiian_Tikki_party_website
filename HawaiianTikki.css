@@ -14,7 +14,7 @@ h1{
     font-weight: 500;
     font-family: 'martellas_scriptdemo_', Arial, sans-serif;
     font-size: 80px;
-    padding-top: 30px;
+    padding-top: 90px;
 }
 
 
@@ -45,7 +45,9 @@ body {
 #home .logo{
     width: 120px;
     cursor: pointer;
+    margin-top: 45px;
 }
+
 #home .logo:hover{
     transition: width 2s, height 2s, transform 1s;
     transform: rotate(360deg);
@@ -62,12 +64,12 @@ body {
     margin: auto;
     padding: 3px 0;
     z-index: 100000;
-    height: 85px;
+    height: 70px;
 }
 .navbar.sticky{
     padding: 3px 0;
     background: #22A895;
-    opacity: 90%;
+    opacity: 98%;
 }
 .navbar .logo{
     font-size: 4em;
@@ -79,6 +81,8 @@ body {
     display: inline-block;
     position: relative;
     margin: 0 60px 0 5px;
+    font-size: 17px;
+    padding: 12px;
 }
 nav.black ul{
     background: black;
@@ -90,12 +94,12 @@ nav.black ul{
 }
 #home .navbar ul li::after{
     content: '';
-    height: 3px;
+    height: 2px;
     width: 0;
-    background: #22A895;
+    background: white;
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: 5px;
     transition: 0.5s;
 
 }
@@ -104,7 +108,7 @@ nav.black ul{
 }
 #home .content{
     width: 100%;
-    margin-top: 230px;
+    margin-top: 275px;
     transform: translateY(-50%);
     text-align: center;
     color: white;
@@ -112,7 +116,7 @@ nav.black ul{
 }
 #home .content h1 {
     font-family: 'martellas_scriptdemo_', Arial, sans-serif;
-    font-size: 150px;
+    font-size: 190px;
     font-weight:normal;
     font-style:normal;
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
@@ -124,20 +128,20 @@ nav.black ul{
     margin: 10px auto;
     font-weight: 100;
     line-height: 25px;
-    font-size: 35px;
+    font-size: 50px;
     font-family: 'martellas_scriptdemo_', Arial, sans-serif;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     position: center;
     text-align: center;
 }
 #home button{
-    width: 180px;
+    width: 200px;
     padding: 10px 0;
     text-align: center;
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     border: 1px solid rgb(37,170,150) ;
     background: transparent;
     color: white;
@@ -172,9 +176,13 @@ nav.black ul{
     body {
         overflow-x: hidden;
     }
+    #home .logo{
+        width: 180px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
     #home .navbar ul li a{
         color: white;
-
     }
     .navbar{
         padding: 0;
@@ -182,6 +190,8 @@ nav.black ul{
     }
     .navbar .menu-hamburger{
         display: block;
+        padding-top: 0;
+
     }
     .navbar .menu-hamburger:hover{
         transform: scale(1.3);
@@ -212,8 +222,8 @@ nav.black ul{
 
     }
     #home .navbar ul li{
-        margin: 50px 0;
-        font-size: 45px;
+        margin: 70px 0;
+        font-size: 20px;
         padding-top: 25px;
 
     }
@@ -223,17 +233,45 @@ nav.black ul{
     .menu-hamburger.sticky{
         color: black;
     }
+    #home .hero {
+        margin-bottom:400px;
+    }
+    #home #myVideo {
+        width: 100vw;
+        height: 100vh;
+    }
+    #home .content{
+        width: 100%;
+        margin-top: 700px;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+        z-index: -1;
+    }
+    #home .content h1 {
+        font-size: 250px;
+
+    }
+    #home .content p{
+        font-size: 70px;
+    }
+    #home button{
+        width: 260px;
+        font-size: 32px;
+
+    }
 }
 .navbar.sticky ul li a{
     color: black;
-    font-size: 15px;
+    font-size: 17px;
 }
 .navbar.sticky.navbar{
     height: 50px;
 }
 .navbar.sticky.navbar img{
-    margin-top: 30px;
+    margin-top: 45px;
 }
+
 
 
 /*Hier begint "About-us" sectie*/
@@ -291,6 +329,7 @@ button{
     padding: 13px 30px;
     border-radius: 30px;
     transition: .4s;
+    font-size: 22px;
 }
 button:hover{
     background-color: transparent;
@@ -303,10 +342,6 @@ button:hover{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-#line_up html {
-    font-size: 62.5%;
 }
 #line_up .Line-up{
     background-color: #191919;
@@ -336,8 +371,8 @@ button:hover{
 }
 #line_up .container .box {
     position: relative;
-    width: 25rem;
-    height: 25rem;
+    width: 30rem;
+    height: 30rem;
     margin:4em;
 
 }
@@ -357,8 +392,8 @@ button:hover{
     transition: all 0.5s ease-in-out;
 }
 #line_up .imgBox img {
-    width: 25rem;
-    height: 25rem;
+    width: 30rem;
+    height: 30rem;
     object-fit: cover;
     resize: both;
 }
@@ -427,7 +462,6 @@ button:hover{
 }
 #bus_uren *{
     box-sizing: border-box;
-
 }
 .table_container{
     padding: 0 10%;
@@ -478,9 +512,9 @@ button:hover{
     border: 1px solid #dee2e385;
 }
 .table .text_open{
-   font-size: 20px;
-   font-weight: bold;
-   letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
     color: #22A895;
 }
 .table_container1{
@@ -615,14 +649,14 @@ button:hover{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 #Partners .partner-titel{
     color: white;
     text-align: center;
     text-decoration: underline #22A895;
     text-transform: uppercase;
-    margin: 50px auto 0;
+    margin: 60px auto 0;
 }
 #Partners .container_partners .box_partners {
     position: relative;
@@ -662,7 +696,6 @@ button:hover{
 }
 
 /*Hier begint "Contact" sectie*/
-
 #Contact {
     margin: 0;
     padding: 0;
@@ -673,7 +706,6 @@ button:hover{
     position: relative;
     min-height: 100vh;
     padding: 30px 100px;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -684,7 +716,7 @@ button:hover{
 #contact .content{
     text-align: center;
 }
-.h2_contact {
+#contact h1{
     font-weight: 500;
     color: white;
     text-decoration: underline #22A895;
@@ -775,7 +807,10 @@ button:hover{
     transition: 0.5s;
     color: #666;
 }
-.contactForm .input_box input:focus ~ .span_contact{
+.contactForm .input_box input:focus ~ .span_contact,
+.contactForm .input_box input:valid ~ .span_contact,
+.contactForm .input_box textarea:focus ~ .span_contact,
+.contactForm .input_box textarea:focus ~ .span_contact{
     color: #e91e63;
     font-size: 12px;
     transform: translateY(-20px);
@@ -831,17 +866,19 @@ footer{
     justify-content: center;
 }
 footer p:nth-child(1){
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     margin-bottom: 20px;
     font-weight: bold;
+    font-family: 'martellas_scriptdemo_', Arial, sans-serif;
 }
 footer p:nth-child(2){
     color: white;
-    font-size: 15px;
+    font-size: 22px;
     width: 500px;
     text-align: center;
     line-height: 26px;
+    font-family: 'martellas_scriptdemo_', Arial, sans-serif;
 }
 .socials{
     display: flex;
