@@ -32,31 +32,34 @@
                     <nav>
                         <ul class="nav-menu">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Home</a>
+                                <a class="nav-link" href="#" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#about">About us</a>
+                                <a class="nav-link" href="#about">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#line_up">Line-Up</a>
+                                <a class="nav-link" href="#line_up">Line-Up</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#Tickets">Tickets</a>
+                                <a class="nav-link" href="#Tickets">Tickets</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#bus_uren">Busuren</a>
+                                <a class="nav-link" href="#bus_uren">Busuren</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#Partners">Partners</a>
+                                <a class="nav-link" href="#Partners">Partners</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#Contact">Contact</a>
+                                <a class="nav-link" href="#Contact">Contact</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <img src=Assets/hamburger_menu.webp alt="menu hamburger"
-                     class="menu-hamburger">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </header>
         <div class="content">
@@ -487,11 +490,17 @@
 
 </body>
 <script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-    const navLinks = document.querySelector(".nav-links")
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-    menuHamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('mobile-menu')
-    })
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
 </script>
 </html>
